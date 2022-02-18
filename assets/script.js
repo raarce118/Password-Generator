@@ -28,7 +28,7 @@ function passwordPrompt() {
            //Numbers
            var numberPrompt = window.confirm("Do you want numbers included in your password?");
 
-
+           //If user did not meet criteria, show alert and direct them back to beginning.
            if (specialPrompt === false && upperCasePrompt === false && lowerCasePrompt === false && numberPrompt === false) {
     
            alert('You did not choose the required amount of prompts special characters. Please choose at least one.')
@@ -36,7 +36,7 @@ function passwordPrompt() {
          };
          
         
-
+               // communication between the special characters, letters, and numbers and the variable prompts.
                var passwordChoices = {
                lowercase: lowerCasePrompt,
                uppercase: upperCasePrompt,
@@ -45,7 +45,7 @@ function passwordPrompt() {
                length: passwordLength
                };
 
-               // various password array combinations 
+               // calls array at beginning and uses to come up with various array password combinations.
                var array;
                var array = []
                if (lowerCasePrompt) {
@@ -64,37 +64,37 @@ function passwordPrompt() {
                function shuffle(array) {
                let currentIndex = array.length, randomIndex;
 
-               // While there remain elements to shuffle...
+               
                while (currentIndex != 0) {
 
-               // Pick a remaining element...
+               
                randomIndex = Math.floor(Math.random() * currentIndex);
                currentIndex--;
 
-               // And swap it with the current element.
+               
                [array[currentIndex], array[randomIndex]] = 
                [array[randomIndex], array[currentIndex]];
                }
 
                 return array;
                }
-   // Used like so
+             
 
-   shuffle(array);
-   array.length = passwordLength
-
-
-   return array;
+               shuffle(array);
+                  array.length = passwordLength
 
 
+                return array;
 
- };
- return characterPrompt();
 
-};
 
-return chooseLength();
-}
+                };
+          return characterPrompt();
+
+              };
+
+    return chooseLength();
+    }
 
 
 
