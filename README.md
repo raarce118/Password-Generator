@@ -1,14 +1,16 @@
-#Portfolio
-##Purpose
-To showcase what skills I have developed thus far in my career, what I am currently working on, and my future goals
+**Password Generator**
 
-##Built With
+**Purpose:**
+To provide the user with a safe, strong, and randomly generated password based off of certain criteria.
+
+**Built With:**
 HTML
 CSS
-Website
-https://raarce118.github.io/portfolio/
+JS
 
-##Website
+
+
+**Website:**
 https://raarce118.github.io/Password-Generator/
 
 
