@@ -8,5 +8,9 @@ html
 css
 Javascript
 
+# Deployed Site
+https://raarce118.github.io/Password-Generator/
+
+
 
 <img width="789" alt="Capture" src="https://user-images.githubusercontent.com/26842079/154627250-dd5a1fdf-7e77-41d8-8b59-829caebc9cb3.PNG">
